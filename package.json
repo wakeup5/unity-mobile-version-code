@@ -1,7 +1,7 @@
 {
   "name": "com.natewilliford.unitymobileversioncode",
   "displayName": "Mobile Version Code",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "unity": "2018.4",
   "license": "MIT",
   "description": "Get the native version code for Android or iOS.",
