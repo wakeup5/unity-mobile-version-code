@@ -9,7 +9,6 @@ namespace MobileVersionCode
 #if UNITY_EDITOR  
             return UnityEditor.PlayerSettings.Android.bundleVersionCode;
 #else
-            return UnityEditor.PlayerSettings.Android.bundleVersionCode;
             AndroidJavaClass unityPlayer = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
             var activity = unityPlayer.GetStatic<AndroidJavaObject>("currentActivity");
             AndroidJavaObject packageManager = activity.Call<AndroidJavaObject>("getPackageManager");
