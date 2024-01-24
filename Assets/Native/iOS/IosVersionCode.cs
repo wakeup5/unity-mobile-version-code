@@ -13,7 +13,7 @@ namespace MobileVersionCode
         public static partial int GetVersionCode()
         {
 #if !UNITY_EDITOR
-            return getBundleVersion().ToString();
+            return getBundleVersion();
 #else
             if (int.TryParse(UnityEditor.PlayerSettings.iOS.buildNumber, out var versionCode))
             {
